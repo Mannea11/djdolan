@@ -17,22 +17,17 @@ function MyComponent() {
             <a href="#web-store">Web store</a>
           </li>
           <li className="nav-item">
-            <a href="#sweden"><img 
-              src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/800px-Flag_of_Sweden.svg.png" 
-              alt="Sverige" 
-              className="flag-icon" 
-            /> Sverige</a>
+            <a href="#sweden">
+ <img src={process.env.PUBLIC_URL + "/images/sweden.jpg"} alt="Sverige" className="flag-icon" /> Sverige</a>
           </li>
           <li className="nav-item">
-            <a href="#uk"><img 
-              src="https://cdn.pixabay.com/photo/2015/11/06/13/29/union-jack-1027898_1280.jpg" 
+            <a href="#uk"><img src={process.env.PUBLIC_URL + "/images/uk.jpg"}
               alt="UK" 
               className="flag-icon" 
             /> UK</a>
           </li>
           <li className="nav-item">
-            <a href="#aotearoa"><img 
-              src="https://nzhistory.govt.nz/sites/default/files/styles/wide/public/images/maori-national-flag.gif?itok=E_OFsNI3" 
+            <a href="#aotearoa"><img src={process.env.PUBLIC_URL + "/images/aotearoa.jpg"}
               alt="aote" 
               className="flag-icon" 
             /> Aotearoa</a>
