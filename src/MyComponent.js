@@ -21,7 +21,7 @@ function MyComponent() {
               src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/800px-Flag_of_Sweden.svg.png" 
               alt="Sverige" 
               className="flag-icon" 
-            /> Sweden</a>
+            /> Sverige</a>
           </li>
           <li className="nav-item">
             <a href="#uk"><img 
