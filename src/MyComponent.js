@@ -10,15 +10,35 @@ function MyComponent() {
 
   return (
     <div className="hero-section">
-    <nav className="navbar">
-      <div className="logo">DJ DOLAN</div>
-      <ul className="nav-links">
-        <li><a href="#web-store">Web store</a></li>
-        <li><a href="#sweden">Sweden</a></li>
-        <li><a href="#uk">UK</a></li>
-        <li><a href="#aotearoa">Aotearoa</a></li>
-      </ul>
-    </nav>
+      <nav className="navbar">
+        <div className="logo">DJ DOLAN</div>
+        <ul className="nav-links">
+          <li className="nav-item">
+            <a href="#web-store">Web store</a>
+          </li>
+          <li className="nav-item">
+            <a href="#sweden"><img 
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/800px-Flag_of_Sweden.svg.png" 
+              alt="Sverige" 
+              className="flag-icon" 
+            /> Sweden</a>
+          </li>
+          <li className="nav-item">
+            <a href="#uk"><img 
+              src="https://cdn.pixabay.com/photo/2015/11/06/13/29/union-jack-1027898_1280.jpg" 
+              alt="UK" 
+              className="flag-icon" 
+            /> UK</a>
+          </li>
+          <li className="nav-item">
+            <a href="#aotearoa"><img 
+              src="https://nzhistory.govt.nz/sites/default/files/styles/wide/public/images/maori-national-flag.gif?itok=E_OFsNI3" 
+              alt="aote" 
+              className="flag-icon" 
+            /> Aotearoa</a>
+          </li>
+        </ul>
+      </nav>
 
 
       <div class="spotify-player-container">
@@ -26,23 +46,6 @@ function MyComponent() {
           <iframe src="https://open.spotify.com/embed/playlist/5yUFGowVv0WRuHieSYVB1C?utm_source=generator&theme=0" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
         </div>
-    
-      
-
-        <div className="gallery">
-        <div className="gallery-item" onClick={() => handleImageClick('Sweden')}>
-          <img src="sweden.jpg" alt="Sweden" />
-          <p className="location-name">Sweden</p>
-        </div>
-        <div className="gallery-item" onClick={() => handleImageClick('UK')}>
-          <img src="uk.jpg" alt="UK" />
-          <p className="location-name">United Kingdom</p>
-        </div>
-        <div className="gallery-item" onClick={() => handleImageClick('Aotearoa')}>
-          <img src="aotearoa.jpg" alt="Aotearoa" />
-          <p className="location-name">Aotearoa</p>
-        </div>
-      </div>
     </div>
   );
 }
